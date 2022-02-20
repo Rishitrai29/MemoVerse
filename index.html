@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MemoVerse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+</head>
+
+<body class=>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" ><b><i>MemoVerse</i></b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-2">
+    <h1 class="text-center"><b><i>Welcome To MemoVerse</i></b></h1>
+
+    <div class="card my-3">
+      <div class="card-body">
+        <form action="#">
+
+          <input id="adddate" type="date" class="form-control my-3" placeholder="Enter the date of your memory" />
+
+          <input id="addtitle" type="text" class="form-control my-3" placeholder="Enter memory title" />
+
+          <textarea id="adddesc" cols="30" rows="10" class="form-control my-3"
+            placeholder="Enter about your memory"></textarea>
+
+          <div class="container text-center mt-2">
+            <button onclick="add_todo()" class="btn btn-dark">
+              Add a new memory
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <br />
+    <h1><b><i>Your Memories</i></b></h1>
+
+    <div class="main-content my-3" id="main-content">
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
